@@ -1,0 +1,33 @@
+.Ejemplo {
+    Padding: 20px 50px;
+    background: hsl(210, 40%, 85%);
+    margin: 20px;
+    margin-left: 100px;
+    text-align: center;
+    color: hsl(210, 40%, 45%);
+    border-top: 2px solid hsl(210, 40%, 45%);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.RGB {
+    background: rgb(100, 200, 255);
+}
+
+.Hexadecimal {
+    background: #5500ff;
+}
+
+.Hexadecimal_Sintetizado {
+    background: #f90a;
+}
+
+.HSL {
+    background: hsl(200, 40%, 75%); /* background: hsl(hue, saturation, lightness) */       
+}   

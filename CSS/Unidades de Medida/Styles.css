@@ -1,0 +1,31 @@
+html {
+    font-size: 50px;
+}
+
+div {
+    background: #ededed;
+    padding: 20px; /*20px*/
+    font-family: sans-serif;
+    border-left: 5px solid #999;
+    font-size: 25px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1em; /*Segun el "padre" que es 25px, el h1 se mostrará a 25px*/
+}
+
+span {
+    color: #999;
+    font-size: 0.35rem;/*segun el "abuelo" que es 50px, el span se mostrará a 17.5px*/
+    font-weight: 100;
+} 
+
+p{
+    color: #555;
+    font-size: 0.80em;
+}

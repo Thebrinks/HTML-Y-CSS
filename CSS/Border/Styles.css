@@ -1,0 +1,70 @@
+.borde1 {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    margin: 10px;
+}
+
+.borde1 {
+    border-width:5px;
+    border-color:Blue;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.borde2 {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    margin: 10px;
+}
+
+.borde2 {
+    border: 5px solid blue;
+    border-radius: 4px;
+}
+
+.borde3 {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    margin: 10px;
+}
+
+.borde3 {
+    border-top: 5px solid green;
+    border-bottom: 5px solid yellow;
+    border-right: 5px solid orange;
+    border-left: 5px solid blue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius:5px;
+}
+
+.Nombre {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.Email {
+    border: none;
+    border-top: 1px solid gray;
+    padding: 6px 9px;
+    background: whitesmoke;
+    margin: 5px;
+}
+
+.Password {
+    border: none;
+    border-top: 1px solid gray;
+    padding: 6px 9px;
+    background: whitesmoke;
+    margin: 5px;
+}
+
