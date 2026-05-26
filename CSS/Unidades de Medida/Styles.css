@@ -7,16 +7,19 @@ div {
     padding: 20px; /*20px*/
     font-family: sans-serif;
     border-left: 5px solid #999;
-    font-size: 25px;
-    width: 100vw;
-    height: 100vh;
+    font-size: 20px;
+    width: 80vw;
+    height: 80vh;
     margin: 0;
     box-sizing: border-box;
+    margin: auto;
+    margin-top: 10vh;
+
 }
 
 h1 {
     margin: 0;
-    font-size: 1em; /*Segun el "padre" que es 25px, el h1 se mostrará a 25px*/
+    font-size: 1em; /*Segun el "padre" que es 20px, el h1 se mostrará a 20px*/
 }
 
 span {
@@ -28,4 +31,5 @@ span {
 p{
     color: #555;
     font-size: 0.80em;
+    
 }
