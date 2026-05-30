@@ -1,0 +1,45 @@
+/* SELECTOR POR ATRIBUTO */
+img[src^="../../Imagenes/Luffy1"] {
+    width: 50%;
+}
+
+img[src$="jpg"] {
+    border: 3px solid #000;
+}
+
+img[src="../../Imagenes/Luffy1.jpg"] {
+    box-shadow: 0px 0px 50px 10px #0005;
+}
+
+/* SELECTOR DESCEDENTE */
+ul li {
+    color: grey;
+}
+
+ul em {
+    color: #000
+}
+
+/* SELECTOR POR HIJO DIRECTO */
+li > em {
+    text-decoration:underline ;
+}
+
+/* SELECTOR DE HERMANO ADYASENTE */
+h1 + p {
+    font-style:italic;
+}
+
+h1 + p + ul {
+    background-color: #6aa5ff;
+}
+
+/* SELECTOR DE HERMANOS GENERALES */
+h1 ~ p {
+    color: #0da5e0;
+}   
+
+/* SELECTOR MULTIPLE */
+h1, h2 {
+    color: red
+} 
