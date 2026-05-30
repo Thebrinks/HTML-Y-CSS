@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Formulario de Contacto</title>
+</head>
+<body>    
+    <form>
+        <h2>Formulario de contacto</h2>
+
+        <!-- SIMPLE INPUTS -->
+         <fieldset>
+                <legend>INFORMACIÓN BASICA</legend>
+                <div class="form_input">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" placeholder="Juan Pablo" id="nombre">
+                </div>
+                <div class="form_input">
+                    <label for="Edad">Edad</label>
+                    <input type="number" placeholder="Edad" id="Edad">
+                </div>
+                <div class="form_input">
+                    <label for="email">Email</label>
+                <input type="email" placeholder="ejemplo@gmail.com" id="email">
+                </div>
+                <div class="form_input">
+                    <label for="Asunto">Asunto</label>
+                    <input type="text" placeholder="Asunto del mensaje" id="Asunto">
+                </div>
+            </fieldset>
+            
+        <!-- SELECT & OPTION -->
+        <div class="form_input">
+            <label for="type-of-user">Tipo de usuario</label>
+            <select name="type-of-user" id="type-of-user">
+                <option value="Seguidor/a">Seguidor/a</option>
+                <option value="Empresa">Empresa</option>
+                <option value="Otros">Otros</option>
+            </select>
+        </div>
+
+        <!-- DATALIST & OPTION -->
+        <div class="form_input">
+            <label>Referente
+            <input list="referente" name="referente"> 
+            <datalist id="referente" name="type-of-user" id="referent">
+                <option value="Juan Pablo">Un estudiante de programación</option>
+                <option value="Una empresa">ejm: ChocoFeel</option>
+                <option value="Red Social">Instagram, Facebook, Twitter...</option>
+                <option value="Amigos">Amigos</option>
+                <option value="Otros">Familiares...</option>
+            </datalist>
+            </label>
+        </div>
+
+        <!-- TEXTAREA -->
+        <div class="form_input">
+            <label for="mensaje">Mensaje</label>
+            <textarea rows="6" placeholder="Deja tu mensaje aquí..." id="mensaje"></textarea>
+        </div>
+
+        <!-- CHECKBOX -->
+        <div class="form_input">
+            <label for="checkbox">Acepto los términos y condiciones</label>
+            <input type="checkbox" id="checkbox" class="checkbox">
+        </div>
+    </form>
+</body>
+</html>
