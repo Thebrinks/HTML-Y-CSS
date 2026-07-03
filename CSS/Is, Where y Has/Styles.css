@@ -1,0 +1,64 @@
+section .elemento1,
+section .elemento2,
+section .elemento3 {
+    color: red;
+}
+
+/* :where cumple la misma funcion de :is pero con menor especify */
+section :where(.elemento1, .elemento2, .elemento3) {
+    color: green;
+}
+
+
+/* Lo que hace :is es agrupar las clases de elemento a los cuales se les va a asignar el atributo */
+section :is(.elemento1, .elemento2, .elemento3) {
+    color: blue;
+}
+
+body :is(h1, h2, h3, h4, h5, h6) {
+    color: red;
+}
+
+/* La funcion que cumple :has en que en caso de que tenga un "elemento4" se aplica los atributos correspondientes*/
+section:has(.elemento4) {
+    background-color: #000;
+    color: #fff;
+}
+
+/* en este caso el atributo o modificacion es para DIV */
+ul + div
+
+/* En caso de que al UL le siga un DIV modificamos se modifica el UL */
+ul:has(+div) {
+    color: green;
+}
+
+
+/* se cambia solo el color al contenido del input */
+input[class="email1"]:valid {
+    color: green;
+}
+
+input[class="email1"]:invalid {
+    color: red;
+}
+
+/* se cambio el color solo al label que esta conteniendo al input */
+label:has(input[class="email2"]:valid) {
+    color:green
+}
+
+label:has(input[class="email2"]:invalid) {
+    color:red
+}
+
+/* se cambia el color a los dos */
+label:has(input[class="email3"]:valid), 
+input[class="email3"]:valid {
+    color:green
+}
+
+label:has(input[class="email3"]:invalid), 
+input[class="email3"]:invalid {
+    color:red
+}
