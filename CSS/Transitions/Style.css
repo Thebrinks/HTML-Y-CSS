@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    margin-top: 50px;
+    font-size: 60px;
+    color: red;
+    position: relative;
+    left: 0;
+}
+
+/* Para ver como funcionan las curvas de bezier, en esta pagina web se encuentra: https://cubic-bezier.com/*/
+
+.box-red{
+    transition-property: left;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(.66,.1,.29,.89);
+    background-color: #f00;
+}
+
+.box-blue {
+    background-color: blue;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 2s;
+}
+
+.box-yellow {
+    background-color: yellow;
+    transition-property: left;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.63,.26,.47,.81);
+}
+
+.box-green{
+    background-color: green;
+    transition: left 4s cubic-bezier(.11,.64,.85,.17) 1s;;
+}
+body:hover .box {
+    left: 600px;
+}

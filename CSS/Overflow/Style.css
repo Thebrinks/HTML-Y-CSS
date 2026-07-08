@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.box {
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+    left: 0;
+    border: 2px Solid #0009;
+}
+
+.box-red{
+    background-color: #fff;
+    overflow: visible;
+}
+
+.box-blue {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.box-yellow {
+    background-color: #fff;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.box-green{
+    background-color: #fff;
+    overflow: auto;
+}
