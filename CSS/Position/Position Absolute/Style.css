@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.contenedor {
+    border: 2px solid #000;
+    margin: 30px 50px;
+    background-color: #fff;
+    position: relative;
+    height: 300px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+}
+
+.box--orange {
+    background-color: #db7
+}
+
+/*Position: absolute vuelve la caja oo objeto la mas importante de toda la pagina, es decir que tomaria de punto de referencia predeterminado es 0 <html>*/
+/*Si en este caso el .contenedor tuviera position: relative, se toma como punto de referencia el div con la clase contenedor*/
+.box--blue {
+    background-color: #48e;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.box--red {
+    background-color: #f64;
+}

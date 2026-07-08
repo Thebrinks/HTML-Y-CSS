@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: #ededed;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: #fff;
+    position: relative;
+}
+
+
+/* lAS POSICIONES QUE SE PUEDEN MODIFICAR MAS IMPORTANTES ES LEFT Y TOP */
+/* Pero si no estan Left y top pero si no se estan utilizando se pueden utilizar right y bottom*/
+
+.box--blue {
+    background-color: blue;
+    top: 70px;
+    left: 20px;
+}
+
+/* Las cajas o objetos funcionan por capas, es decir que los objetos mas antiguos van a estar en la capa mas de atras y los mas nuevos vana estar en la capa delantera */
+
+/*la propiedad z-index: cambia la capa a la que pertenece el objeto, entre mas grande sea el numero, mayor sera la capa*/
+
+.box:first-child {
+    top: 150px;
+    left: 40px;
+    background-color: red;
+    z-index: 10
+}
+
+.box:nth-child(2) {
+    z-index: 20
+}
+
+.box:nth-child(3) {
+    z-index: 30;
+}
