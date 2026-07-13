@@ -1,0 +1,32 @@
+ body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ 
+   /* fle-direction:row-reverse hace que cambien de direccion o orden junto con todo su entorno, es decir el ultimo pasa a ser el primero y el primero pasa a ser el ulitmo... */
+   /* flex-direction:row sigue el sentido del texto, es decir si el direction:ltr es ltr va a ir de izquiera a derecha o si es rtl va a ir de derecha a izquierda */
+   /* flex-direction:column, parecido pero en forma de columna y va en dirreccion de arriba a abajo */
+
+
+ .flexbox {
+   display: flex;
+   flex-direction: row;
+   direction: ltr;
+ }
+
+ .flex-item {
+    width: 180px;
+    background-color: #911;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+ }
+
+ .flex-item:first-child {
+    background-color: #d56;
+ }
+
+ .flex-item:last-child {
+   background-color: #000;
+ }

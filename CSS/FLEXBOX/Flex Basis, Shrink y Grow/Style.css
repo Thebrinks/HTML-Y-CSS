@@ -1,0 +1,53 @@
+body {
+   margin: 0;
+   font-family: 'Times New Roman', Times, serif;
+   background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+.flexbox {
+   display: flex;
+   flex-flow: row wrap;
+   margin: 20px;
+   align-items: center;
+   border: 2px solid #000;
+   flex-shrink: 5;
+   height: 200px;
+   /* 
+   flex-shrink: indica hasta que punto se pueden encojer los elementos ajustandose a diferentes tamaños de pantallas o del dispositivo, es decir estre mas grande sea el numero mas se van a poder encojer y cuando sea 0 no se podran encojer
+   */
+   /* gap: 30px; */
+   /* 
+   gap: indica la separacion qeu van a tener entre div que por lo general estan muy juntos
+   */
+}
+
+.flex-item {
+   background-color: #911;
+   color: #fff;
+   font-size: 40px;
+   text-align: center;
+   flex-shrink: 1;
+   flex-basis: 100px;
+   flex-grow: 1;
+   /* 
+   flex: 1 1 100px; flex: grow shrink basis;
+   */
+}
+
+.flex-item:nth-child(2n) {
+   background-color: #d56;
+   flex-shrink: 0;
+   flex-grow: 2;
+}
+
+.flex-item:last-child {
+  background-color: #000;
+  align-self: stretch;
+}
+
+.item-5 {
+   align-self: stretch;
+}

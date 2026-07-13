@@ -1,0 +1,87 @@
+body {
+   margin: 0;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.flexbox {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* 
+   flex-flow: row wrap
+   flex-flow: column wrap
+   */
+   direction: ltr;
+   /* 
+   direction:
+      ltr; left to rigt
+      rtl; right to left
+   */
+   border: 2px solid #000;
+   margin: 20px;
+   justify-content: space-evenly;
+   /* 
+   justify-content:
+      space-evenely; misma separacion de elementos incluyendo margenenes y bordes
+      space-between; el primer elemento en la esquina coreespondiente y el ultimo en la esquina correspondiente y los del medio se reparten en el espacio qeu tienen
+      space-around; hace que los elemento esten separaddos y con unos margenes proporcionales por cada lado, sumando margenes en caso que esten dos margenen superpuestos
+      end; todos las elemento se van al extremo contrario con el qeu se esta trabajando
+      start: se van al extremo con el que se este trabajando
+      center: se centran, dejando margenes para los extremos
+   */
+
+}
+
+.flex-item {
+   width: 150px;
+   background-color: #911;
+   margin: 10px;
+   color: #fff;
+   font-size: 40px;
+   text-align: center;
+}
+
+.flex-item:first-child {
+   background-color: #d56;
+}
+
+.flex-item:last-child {
+  background-color: #000;
+}
+
+
+.flexbox__2 {
+   display: flex;
+   flex-flow: row wrap;
+   direction: ltr;
+   border: 2px solid #000;
+   margin: 20px;
+   justify-content: space-evenly;
+   align-items: baseline;
+   /* 
+   align-items: 
+      scretch; cuando los elementos no tienen un height, llenan el espacio estirandolos para que se ajusten
+      start; Deja que el contenido sea el original y los posiciona al principio
+      end; parecido a start pero los posiciona al final
+      center; los posiciona en el centro
+      baseline; estan alineados con base al punto de texto
+   */
+   align-content: space-evenly;
+   height: 360px;
+}
+
+.flex-item__2 {
+   width: 100px;
+   background-color: #911;
+   color: #fff;
+   font-size: 40px;
+   text-align: center;
+}
+
+.flex-item__2:first-child {
+   background-color: #d56;
+}
+
+.flex-item__2:last-child {
+  background-color: #000;
+}
