@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    background-color: #8f5a3a;
+    color: #fff;
+}
+
+body, div, header, nav, ul, h1, h2, p, img {
+    box-sizing: border-box;
+}
+
+/* HEADER SECTION */
+
+.header {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url("../../../imagenes-y-videos/bombones.jpg");
+    background-size: cover;
+    display: flex;
+}
+
+.header__overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #8f5b3a96;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__item-container {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.header__item-container p {
+    text-wrap: pretty;
+}
+
+.header__img {
+    min-width: 250px;
+    max-width: 30%;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    margin: 20px
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.6rem;
+    text-wrap: balance;
+}
+
+/* NAVBAR SECTION */
+
+.nav {
+    background-color: #f8efe4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6px 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 25px #0006;
+} 
+
+.nav__ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__logo-container, .nav__ul-container {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav__ul-container {
+    flex-grow: 4;
+}
+
+.nav__link {
+    color:#8f5a3a;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 0;
+    transition: background-color 0.24s, border-radius 0.2s, outline 0.2s, outline-offset 0.2s;
+    margin: 2px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.nav__link:hover {
+    background-color: #8f5b3a42;
+    border-radius: 20px;
+    outline: 2px solid #8f5b3ab9;
+    outline-offset: -7px;
+}
+
+.link--login {
+    background-color: #8f5a3a;
+    color: #f8efe4;
+    border-radius: 20px;
+    padding: 8px 24px;
+    margin-left: 6px;
+}
+
+.link--login:hover {
+    background-color: #8f5b3ad7;
+    outline: navajowhite;
+}
+
+.nav__logo {
+    width: 120px;
+}
+
+
+/* MAIN SECTION */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 25px;
+    text-wrap: pretty;
+}
