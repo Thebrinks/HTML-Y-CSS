@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    /* 9 Dividido entre 16: 0.5625
+    0.5625 * 100: 56.25
+    */
+}
+
+video {
+    max-width: 100%;
+}
