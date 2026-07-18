@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture, Source y Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <picture>
+        <source srcset="../../imagenes-y-videos/luffy-normal.webp" type="image/webp">
+        <source media="(max-width: 400px)" srcset="../../imagenes-y-videos/luffy-small.jpg">
+        <source media="(max-width: 600px)" srcset="../../imagenes-y-videos/luffy-medium.jpg">
+        <img src="../../imagenes-y-videos/luffy-normal.jpg">
+    </picture>
+    <!-- 
+    <picture> es parecida a selection pero tiene una utilidad especifica
+    <source> en este caso seria una opcion
+    srcset= la imagen que aparecera si la consicion dada se cumple
+    media= o media query es la condicion dada 
+    <source 
+    media="(max-width: 600px)" 
+    srcset="../../imagenes-y-videos/luffy-medium.jpg">
+    En este caso media="(max-width: 600px) la media da la condicion de que si la resolucion de la pantalla esta en un rango de 600px o menos de de tamaño es elegida por <picture> y justo al lado esta la opcion que aparecera si se cumple la condición.
+
+    <source 
+    srcset="../../imagenes-y-videos/luffy-normal.webp" type="image/webp
+    ">
+    En este caso se tiene un archivo .webp, si el navegador lo soporta, lo utiliza, si no lo soporta, se fija en la resolución de pantalla.
+    -->
+</body>
+</html>

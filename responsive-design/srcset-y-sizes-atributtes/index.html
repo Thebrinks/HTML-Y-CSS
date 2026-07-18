@@ -9,8 +9,21 @@
 <body>
     <img src="../../imagenes-y-videos/luffy-small.jpg" 
     srcset="
-    ../../imagenes-y-videos/luffy-small.jpg 400w,
+    ../../imagenes-y-videos/luffy-small.jpg 360w,
     ../../imagenes-y-videos/luffy-medium.jpg 600w,
-    ../../imagenes-y-videos/luffy-normal.jpg 1000w">
+    ../../imagenes-y-videos/luffy-normal.jpg 1000w"
+    sizes="(max-width: 400px) 300px, 
+    (max-width: 600px) 500px, 900px"
+    >
+    <!-- 
+    Las Media Query, son algo parecido a condicionales, si estas se cumplen, se aplica las caracteristicas asignadas
+    sizes="
+    (max-width: 400px) 300px, 
+    (max-width: 600px) 500px, 900px
+    "
+    Si las pantallas tienen una resolucion 400px o menos se cargan imagenes de hasta 360px o menos
+    Si las pantallas tienen una resolucion de menos de 600px y mas de 500px, se cargan imagenes de 600px o menos
+    Si la resolución de la pantallas es de mas de 500px se cargan imagenes de 900px o mas
+    -->
 </body>
 </html>
