@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2,200px) minmax(100px, 300px) repeat(2,minmax(100px, 200px));
+    grid-template-rows: repeat(2,minmax(200px, 600px)); 
+
+} 
+
+/* 
+    La funcion repeat()
+    tiene el proposito de facilitar la sintaxis del codigo, es deicr se por ejemplo se tiene que asignar a 7 columnas 1fr se podria escribir como: repeat(7,1fr) o tambien alguos se repiten como por ejemplo 100px 200px 200px 200px 300px se podria escribir como: 100px repeat(3,200px) 300px y si se desea repetir un patron como por ejemplo 1fr 2fr 1fr 2fr repeat(2,1fr 2fr)
+*/
+
+.grid-items {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+

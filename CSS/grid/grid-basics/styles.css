@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.grid {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: auto auto;
+
+}
+
+/* 
+display: grid;
+Es parecido a flex box solo que en el caso de grid utiliza dos dimencione slas cuales son las filas y las columnas.
+Se divide en el grid container que es el padre, los grid items que son lois hijos del div principal y los grid cell que son las celdas es decir que todo div padre se dividira en la cantidad de div hijos que tenga dependiendo de la proporcion que se le asigne.
+
+Columnas: Vertical - eje y
+Filas: Horizontal- eje X
+
+grid-template-columns:;
+sirve para añadir columnas por ejemplo se tienen 6 grid cells si pongo grid-template-columns: 200px 200px se dividira en dos columnas de 3 cada una y 3 filas de 2 grid cells cada una.
+grid-template-rows:;
+Funciona igual a la anterior
+
+cuando se utiliza grid-template de columns o de rows los fr se utilizan parecidos al flex grow ees decir divide en espacio disponible dependiendo del numero de fr que se este fraccionando y luego se utiliza la fraccion que se esta asignando a la fila o a la columna.
+*/
+
+.grid-items {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+

@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;  
+    grid-auto-columns: 1fr;
+    /* 
+    gap: 25px 5px;
+    column-gap: 25px;
+    row-gap: 5px; 
+    */
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+} 
+
+/*  
+    Gap sirve para separar los items o elementos hijos reemplazando el margin
+
+    grid-template: auto-fit;
+    dependiendo de la resolucion de la pantalla agraga nuevas filas o columnas ajustando los items a la nueva resolucion añadiendo nuevas filas o columnas, en breves palabras adapta los items a la screen.
+    grid-template: auto-fill;
+    Parecido a auto-fill pero, este busca rellenar los espacios en blanco, es decir que cuando no hay bastantes elementos, a pesar de que no se necesite crea grid cells para rellenar el espacio en que no tiene item
+*/
+
+.grid-items {
+    background-color: #48e;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.grid-items:first-child {
+    grid-column: 1/span 2;
+    /*
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    */
+    grid-row: 1/ span 2;
+    /*
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    */
+    background-image: url("../../../imagenes-y-videos/luffy-normal.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* 
+EL anterios codigo correspondiente al primer item del padre.
+Dado que este tema es un poco complejo, se recomienda repasar externamente pero se hara un resumen brevemente en el sigueinte parrafo.
+El grid column y row, se refiere basicamente al numero de lineas por el cual se separan los items o bien dicho las grid cells, este numero de lineas depende del numero de items que se esten trabajando ejemplo: se tienen 5 items en fila, al numero de items en fila se le suma uno y de esa manera se consigue el numero de lineas de filas o de columnas se llegase el caso. cada fila o columna tiene un numero dependiento del orden en que van, si el sistema llegase a estar en ltr (left to right) los numeor irian de izquiera a derecha o de arriba a abajo, es decir que la  primera linea de superior horizontal tendria el numero de fila 1 y la primera linea de izquierda a derecha vendria a ser la columna 1 y su interseccion en la esquina superior izquiera seria 1, 1. De esta manera con las demas lineas eh intersecciones.
+*/
+
+.grid-items:hover {
+    opacity: 0.74;
+}
+

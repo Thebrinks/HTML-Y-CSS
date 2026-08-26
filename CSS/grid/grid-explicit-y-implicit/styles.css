@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 200px); 
+    grid-template-rows: repeat(3,200px);
+    grid-auto-rows: 100px;
+    grid-auto-flow: row;
+    grid-auto-columns: 100px;
+
+} 
+
+/*  
+    grid-auto-flow:
+    Es para asignar donde se van a sumar los itemsinplicitos es decir que no tienen explicitamente unapropiedad asignada, puede ir en rows que seria en filaso en columns que seira en columnas.
+    
+    grid-auto-rows o columns:
+    aqui es donde le asigno propiedades a los elementos inplicitos
+*/
+
+.grid-items {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
